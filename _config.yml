@@ -1,7 +1,8 @@
 # Site settings
 title: Atomic Bit
 email: julienlucca@gmail.com
-description: > Julien Lucca personal blog, Programming topics. AI, Functional
+description: >
+  Julien Lucca personal blog, Programming topics. AI, Functional
   Programming, Devops, Golang Haskell Ruby Rails Linux Ansible Docker
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://lucca65.github.io" # the base hostname & protocol for your site
