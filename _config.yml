@@ -8,6 +8,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://lucca65.github.io" # the base hostname & protocol for your site
 twitter_username: julienlucca
 github_username:  lucca65
+linkedin_url: https://br.linkedin.com/pub/julien-lucca/35/bb3/452 
 
 # Build settings
 markdown: kramdown
+hightlight: pygments
+# destination: public # so it works with pow
+# exclude: ["CNAME", "Rakefile", "README.md", "public"]
