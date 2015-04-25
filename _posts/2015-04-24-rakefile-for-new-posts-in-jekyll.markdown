@@ -37,12 +37,12 @@ task :post do
   STDOUT.puts('Whats the title of your post?')
   title = STDIN.gets.chomp
 
-  # ...
+  # ... logic to validate entry
 
   # file name, where we use title
   slug = "#{Date.today}-#{title.downcase.gsub(/[^\w]+/, '-')}"
 
-  # ...
+  # ...logic to create .markdown file
 
 end
 {% endhighlight %}
