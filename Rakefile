@@ -2,7 +2,6 @@ require 'date'
 
 desc 'Create a new draft post'
 task :post do
-  # title = ENV['title'] || ENV['TITLE']
   STDOUT.puts('Whats the title of your post?')
   title = STDIN.gets.chomp
 
@@ -32,7 +31,7 @@ task :post do
   end
 
   system ("#{ENV['EDITOR']} #{file}")
-  puts("Post #{title} created successfully!")
+  puts("Post \"#{title}\" created successfully!")
 end
 
 desc 'List all draft posts'

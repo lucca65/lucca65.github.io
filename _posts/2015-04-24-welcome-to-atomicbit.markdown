@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to Atomicbit
-published: true
+published: false
 categories: general
 ---
 Welcome to Atomicbit
