@@ -2,7 +2,7 @@
 layout: post
 title: Rakefile for new posts in Jekyll
 published: true
-categories: rake ruby jekyll tools gist
+categories: ruby jekyll
 ---
 
 When creating this blog, I've came across this problem that there isn't really
