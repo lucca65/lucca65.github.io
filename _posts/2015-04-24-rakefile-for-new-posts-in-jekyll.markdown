@@ -17,6 +17,12 @@ by
 It wasn't easy as I would expect, it asked me to use `rake TITLE="New post"`,
 and it seems wrong. so I've changed the way we ask for a title.
 
+<hr/>
+Here is my take on it
+
+<script src="https://gist.github.com/lucca65/7d8692788932a935e881.js"></script>
+<hr/>
+
 after change a new post is much clearer. To achieve that just add the
 `Rakefile` to your Jekyll blog, and call it:
 

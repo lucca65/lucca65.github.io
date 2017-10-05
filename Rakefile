@@ -5,7 +5,7 @@ task :post do
   STDOUT.puts('Whats the title of your post?')
   title = STDIN.gets.chomp
 
-  if title.nil? || title.length == 0
+  if title.nil? || title.empty?
     STDOUT.puts('No post name? Aborting...')
     next
   end
@@ -30,7 +30,7 @@ task :post do
     EOS
   end
 
-  system ("#{ENV['EDITOR']} #{file}")
+  system("#{ENV['EDITOR']} #{file}")
   puts("Post \"#{title}\" created successfully!")
 end
 
