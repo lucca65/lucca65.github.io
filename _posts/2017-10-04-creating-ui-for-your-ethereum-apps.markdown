@@ -2,7 +2,15 @@
 layout: post
 title: Creating UI for your Ethereum Ðapps
 published: true
-categories: ethereum tutorial web3js solidity blockchain theconf talks
+categories: ethereum
+tags:
+  - ethereum
+  - tutorial
+  - web3js
+  - solidity
+  - blockchain
+  - theconf
+  - talks
 ---
 
 
