@@ -15,7 +15,7 @@ We've basically covered those topics:
 - [Blockchain overview](#blockchain-overview)
 - [Billboard Example](#billboard)
 - [Web3JS Code](#web3js-code)
-- [Demo](#demo)
+- [Conclusion](#conclusion)
 
 ## Blockchain overview
 
