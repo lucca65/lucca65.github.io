@@ -6,48 +6,48 @@ categories: ethereum tutorial web3js solidity blockchain theconf talks
 ---
 
 
-The Conf Presentation
-Julien: Hi, I'm Julien
-Esdras: Hey, I'm Esdras and today we are going to talk a little about how to interact with smart contracts: How it looks like, what our possibilties are, and how can we integrate it with existing technologies
+On the 2017 [TheConf](http://www.theconf.club) me and [Esdras](https://github.com/esdrasedu) did a presentation about web based interaction with [Ethereum Blockchain](https://www.ethereum.org) using [Web3JS](https://github.com/ethereum/web3.js/)
 
-Slide 2
-Julien: Our agenda will be the following:
-* Introduction 
-    * Just simple introduction so you guys get to know us better 
-* Recap 
-    * Not much to do here since Victor and Bernado already did the heavy lifting for us 
-* Basic interaction with smart contracts 
-    * The most basic, although not the easiest form of interaction 
-* Web based interaction with smart contracts	 
-    * Where all the magic will happen 
-* Examples 
-    * Some examples of Dapps in the wild 
-* Questions 
-    * And a little time for questions 
+The result was [The Dapp](http://thedapp.club), which you can access, use and [fork](https://github.com/lucca65/thedapp)
 
-Slide 3
-Esdras: Those are our emails and github, in case you want to get in touch with us
+We've basically covered those topics:
 
-Slide 3.1
-Julien: We've been working together for a while now, we did a Payment Gateway using Elixir, Ruby and native apps...
+- [Blockchain overview](#blockchain-overview)
+- [Billboard Example](#billboard)
+- [Web3JS Code](#web3js)
 
-Slide 3.2 [On beluga]
-Julien: In a BigData database called BelugaDB, using NodeJS, ReactJS, C++...
+## Blockchain overview
 
-Slide 3.3 [Now at 314]
-Julien: and now we are working at a 314coins, a Ethereum exchange using Elixir and NodeJS
+One way for us to see the Blockchain is as a big database, distributed across several nodes. Therefore, decentralized, and all the communcation and trust are done through cryptography. In Bitcoin, the blockchain has only one use: to compute and keep track of transactions between wallets. But in Ethereum we can do way more, because you can programm it we can run Turing Complete scripts that can act on their own, like reacting to events and send funds as needed.
 
-Slide 4 [Open Source Communities]
-Esdras: We both love open source and we maintain the meetup Elixir User Group SP...
+My first interaction with a smart contract was rather a disastrous one. I've invested in [The DAO](https://daohub.org/) back in 2016, that suffered an serious [attack](https://www.coindesk.com/understanding-dao-hack-journalists/). What if we could create a naive example that wouln't completely create [another coin](https://ethereumclassic.github.io)?
 
-Slide 4.1
-Esdras: And also meetup Ethereum SP. Please feel free to join the community, so you can learn more and help us grow. 
+## Billboard
 
-Slide 5 [Emoji explanation]
-Julien: So, one way for us to see the Blockchain is as a big database, distributed across several nodes. Therefore, decentralized, and all the communcation and trust are done through cryptography.
+Enter [The Dapp](http://thedapp.club). Its pretty straight foward. It displays a value that is stored inside the contract, thus in the blockchain. That value can be updated, for a fee of [10 finney](http://ethdocs.org/en/latest/ether.html#denominations).
 
-Slide 6 [Questions and Bitcoin/Ethereum comparison]
-Esdras: In Bitcoin, the blockchain has only one use: to compute and keep track of transactions between wallets. But in Ethereum we can do way more, because you can programm it we can run Turing Complete scripts that can act on their own, like reacting to events and send funds as needed.
+- It checks if you have a blockchain client running such as [Metamask](http://metamask.io)
+- Gets a value from the contract
+- Displays it
+- Also display a Dapp form to update the value
+
+So the contract is just a big Getter/Setter, displayed in a HTML page. The core is the following
+
+
+{% highlight javascript linenos %}
+  function setMessage(string _message) public payable {
+    require(msg.value == fee);
+    message = _message;
+    OnUpdateMessage(); // Emit event
+  }
+{% endhighlight %}
+
+
+## Conclusion
+
+If you are interesed in buying Ethereum easily using Reais (BRL), checkout our tool [314coins](https://314coins.com)! It's still on beta but make sure to take a moment on it. Any feedbacks can be sent [here](mailto:contato@314coins.com)
+
+-----------
 
 Julien: How many of you here have some Ether?
 Julien: How many of you have participated on THE DAO?
