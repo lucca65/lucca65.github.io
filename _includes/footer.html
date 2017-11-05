@@ -2,15 +2,13 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+      <h2 class="footer-heading">
+      </h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+        <img alt="{{ site.title }}" class="logo" src="/images/square@3x.png"/>
+     </div>
 
       <div class="footer-col  footer-col-2">
         <ul class="social-media-list">
@@ -58,7 +56,10 @@
 
       <div class="footer-col  footer-col-3">
         <p class="text">{{ site.description }}</p>
-      </div>
+        <ul class="contact-list">
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+       </div>
     </div>
 
   </div>
