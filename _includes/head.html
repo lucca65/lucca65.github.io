@@ -10,7 +10,7 @@
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:image" content="http://atomicbit.io/images/horizontal%20compact@4x.png"/>
   <meta property="og:link" content="{{ page.url | absolute_url }}"/>
-  <meta property="og:type" content="{{ page.type }}"/>
+  <meta property="og:type" content="{{ page.type || 'website' }}"/>
   <meta property="og:title" content="{{ page.title }}"/>
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
