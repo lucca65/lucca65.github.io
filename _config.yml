@@ -4,7 +4,7 @@ email: julienlucca@gmail.com
 description: >
   Julien Lucca personal bloga about programming, functional languages, blockchain
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://lucca65.github.io" # the base hostname & protocol for your site
+url: "http://atomicbit.io" # the base hostname & protocol for your site
 twitter_username: julienlucca
 github_username:  lucca65
 linkedin_url: https://br.linkedin.com/pub/julien-lucca/35/bb3/452 
