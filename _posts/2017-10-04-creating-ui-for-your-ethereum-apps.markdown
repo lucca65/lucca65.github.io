@@ -3,6 +3,7 @@ layout: post
 title: Creating UI for your Ethereum Ðapps
 published: true
 categories: ethereum
+type: article
 tags:
   - ethereum
   - tutorial

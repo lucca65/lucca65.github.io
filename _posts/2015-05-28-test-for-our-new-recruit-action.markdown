@@ -3,6 +3,7 @@ layout: post
 title: KiiK is hiring
 published: true
 categories: portuguese kiik jobs
+type: article
 ---
 
 {% highlight ruby linenos %}
